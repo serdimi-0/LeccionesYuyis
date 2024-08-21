@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página</title>
+    <style>
+        h1 {
+            font-size: 90px;
+            color: red;
+        }
+
+        /* input {
+            width: 1000px;
+        } */
+
+        #cajita {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        input {
+            position: absolute;
+            bottom: 10px;
+        }
+
+        input[type=range] {
+            height: 41px;
+            -webkit-appearance: none;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        input[type=range]:focus {
+            outline: none;
+        }
+
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 7px;
+            cursor: pointer;
+            animate: 0.2s;
+            box-shadow: 1px 1px 1px #000000;
+            background: #A90707;
+            border-radius: 5px;
+            border: 1px solid #000000;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            box-shadow: 1px 1px 1px #000000;
+            border: 2px solid #000000;
+            height: 32px;
+            width: 13px;
+            border-radius: 27px;
+            background: #FFFFFF;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -14px;
+        }
+
+        input[type=range]:focus::-webkit-slider-runnable-track {
+            background: #A90707;
+        }
+
+        input[type=range]::-moz-range-track {
+            width: 100%;
+            height: 7px;
+            cursor: pointer;
+            animate: 0.2s;
+            box-shadow: 1px 1px 1px #000000;
+            background: #A90707;
+            border-radius: 5px;
+            border: 1px solid #000000;
+        }
+
+        input[type=range]::-moz-range-thumb {
+            box-shadow: 1px 1px 1px #000000;
+            border: 2px solid #000000;
+            height: 32px;
+            width: 13px;
+            border-radius: 27px;
+            background: #FFFFFF;
+            cursor: pointer;
+        }
+
+        input[type=range]::-ms-track {
+            width: 100%;
+            height: 7px;
+            cursor: pointer;
+            animate: 0.2s;
+            background: transparent;
+            border-color: transparent;
+            color: transparent;
+        }
+
+        input[type=range]::-ms-fill-lower {
+            background: #A90707;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px #000000;
+        }
+
+        input[type=range]::-ms-fill-upper {
+            background: #A90707;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px #000000;
+        }
+
+        input[type=range]::-ms-thumb {
+            margin-top: 1px;
+            box-shadow: 1px 1px 1px #000000;
+            border: 2px solid #000000;
+            height: 32px;
+            width: 13px;
+            border-radius: 27px;
+            background: #FFFFFF;
+            cursor: pointer;
+        }
+
+        input[type=range]:focus::-ms-fill-lower {
+            background: #A90707;
+        }
+
+        input[type=range]:focus::-ms-fill-upper {
+            background: #A90707;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Título</h1>
+    <p id="parrafo">Párrafo</p>
+    <button id="boton">Botón</button>
+    <div id="cajita">
+        <input type="range" name="" id="">
+        <h2>hola</h2>
+    </div>
+    <script>
+        let a = 1;
+        let b = 'Hola';
+
+        document.getElementById('boton').addEventListener('click', () => {
+            document.getElementById('parrafo').innerHTML = 'Hola mundo';
+        })
+    </script>
+</body>
+
+</html>
